@@ -1,8 +1,7 @@
 import functions from "firebase-functions";
 import express from "express";
 import cors from "cors";
-import { getAllPhotos, addNewPhoto } from "./src/photos.js";
-import { FieldValue } from "firebase-admin/firestore";
+import { getAllPhotos, addNewPhoto, likePhoto } from "./src/photos.js";
 
 const app = express();
 app.use(cors());
